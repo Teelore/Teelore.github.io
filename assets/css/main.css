@@ -11,7 +11,30 @@ body {
 	margin: 0px;
 }
 
-nav {
+#nba-nav {
+	background-color: #ffffff;
+	color: #0068b3;
+}
+
+#link-nba-container {
+	width: 90%;
+}
+
+#link-nba-container ul {
+	list-style: none;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+#link-nba-container ul li, #link-nav-container ul li {
+	display: inline;
+}
+
+#link-nba-container ul li:hover {
+	text-decoration: underline;
+}
+
+#memphis-nav {
 	background-color: #0A2240;
 	border-bottom: 10px solid #7C9CBF;
 	color: #ffffff;
@@ -19,16 +42,16 @@ nav {
 	width: 100%;
 }
 
-#nav-content {
+.nav-content {
 	width: 75%;
 	margin: 0 auto;
 }
 
-#left-nav-container, #right-nav-container {
+.left-nav-container, #right-nav-container {
 	width: 10%;
 }
 
-#left-nav-container img {
+.left-nav-container img {
 	width: 100%;
 }
 
