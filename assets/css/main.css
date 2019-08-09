@@ -1,6 +1,7 @@
 html {
 	background-color: #e5e7e9;
 	color: #0a0a0a;
+	overflow-x: hidden;
 }
 
 body {
@@ -152,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 #main-content-left {
 	padding: 15px;
 	width: 33%;
-	border: 1px solid #000000;
+	border-right: 1px solid #000000;
 	text-align: center;
 	float: left;
 }
@@ -169,6 +170,64 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-content-right img {
 	width: 90%;
+}
+
+/*Main Content: Left*/
+
+#player-photo {
+	background: linear-gradient(to bottom, #5d76a9 0%, #5d76a9 38%, transparent 100%) no-repeat,#0b1a36;
+	display: flex;
+	justify-content: center;
+}
+
+#player-photo img {
+	align: flex-end;
+}
+
+#basic {
+	text-align: left;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#bio-left {
+	width: 25%;
+	float: left;
+}
+
+#bio-center, #bio-right {
+	flex-grow: 1;
+}
+
+#number {
+	border-right: 1px solid #000;
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+}
+
+#bio-right {
+	float: left;
+	font-weight: bold;
+	text-align: right;
+}
+
+#basic img {
+	width: 50%;
+	float: left;
+}
+
+.table-cap {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#bio-table {
+	border-collapse: collapse;
+}
+
+#bio-table tbody tr td {
+	border-bottom: 1px solid #000;
 }
 
 /*Footer*/
@@ -194,6 +253,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Praktika Medium", Arial, sans-serif;
 }
 
+.footer-links:first-child {
+	margin-left: 0px;
+}
+
+.footer-links:last-child {
+	margin-right: 0px;
+}
+
 .footer-links img {
 	width: 100%;
 	padding-top: 20px;
@@ -203,6 +270,10 @@ h1, h2, h3, h4, h5, h6 {
 #top-footer ul li {
 	list-style: none;
 	font-size: 14px;
+}
+
+#top-footer ul li:hover, #top-footer h3:hover {
+	color: #12173f;
 }
 
 #top-footer ul {
@@ -236,6 +307,10 @@ h1, h2, h3, h4, h5, h6 {
 	width: 50%;
 }
 
+#right-bottom-footer {
+	text-align: right;
+}
+
 #right-bottom-footer ul li {
 	list-style: none;
 	display: inline;
@@ -245,4 +320,8 @@ h1, h2, h3, h4, h5, h6 {
 #turner-container {
 	width: 60%;
 	margin: 0 auto;
+}
+
+#turner-img {
+	margin-right: 5px;
 }
