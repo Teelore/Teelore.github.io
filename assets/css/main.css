@@ -14,20 +14,36 @@ body {
 #nba-nav {
 	background-color: #ffffff;
 	color: #0068b3;
+	padding: 5px 0px 5px 0px;
+}
+
+#nba-logo {
+	width: 7%;
 }
 
 #link-nba-container {
 	width: 90%;
+	flex-grow: 1;
+	font-weight: bold;
 }
 
 #link-nba-container ul {
 	list-style: none;
 	text-transform: uppercase;
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 #link-nba-container ul li, #link-nav-container ul li {
 	display: inline;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#link-nba-container ul li {
+	margin-right: 30px;
+	font-size: 11px;
 }
 
 #link-nba-container ul li:hover {
@@ -40,11 +56,21 @@ body {
 	color: #ffffff;
 	font-weight: bold;
 	width: 100%;
+	font-size: 14px;
+	padding: 5px;
+	padding-top: 20px;
 }
 
 .nav-content {
-	width: 75%;
+	width: 60%;
 	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+#team-logo {
+	position: absolute;
+	top: 60px;
 }
 
 .left-nav-container, #right-nav-container {
@@ -52,21 +78,31 @@ body {
 }
 
 .left-nav-container img {
-	width: 100%;
+	width: 50%;
 }
 
 #link-nav-container {
 	width: 80%;
+	flex-grow: 1;
+	margin-left: 10%;
+	font-weight: bold;
 }
 
 #link-nav-container ul {
 	list-style: none;
 	text-transform: uppercase;
+	padding-left: 30px;
+}
+
+#link-nav-container ul li {
+	padding: 12px 6px;
+	margin-right: 8px;
 }
 
 #link-nav-container ul li:first-child {
 	background-color: #FFBB22;
 	color: #000000;
+	padding: 10px 15px;
 }
 
 #link-nav-container ul li:hover {
@@ -74,12 +110,20 @@ body {
 	color: #000000;
 }
 
+#right-nav-container {
+	flex-grow: 1;
+	text-align: right;
+	padding-right: 5px;
+}
+
 #right-nav-container img {
 	width: 10%;
 }
 
-#right-nav-container p {
+#right-nav-container span {
 	border-right: 1px solid #ffffff;
+	padding-right: 10px;
+	margin-right: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,10 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-container {
-	width: 75%;
+	width: 60%;
 	background-color: #ffffff;
 	margin: 0 auto;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-bottom: 25px;
 	display: flex;
 }
