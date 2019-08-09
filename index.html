@@ -26,7 +26,7 @@
 		<nav id="memphis-nav" role="navigation">
 			<div class="nav-content">
 				<div id="team-logo" class="left-nav-container">
-					<img src="assets/images/grizzlies-logo.png" alt="Memphis Grizzlies Logo" />
+					<img id="grizzlies-logo" src="assets/images/grizzlies-logo.png" alt="Memphis Grizzlies Logo" />
 				</div>
 				<div id="link-nav-container">
 					<ul>
@@ -111,14 +111,14 @@
 						</ul>
 					</div>
 					<div class="footer-links add-col">
-						<img class="grayscale" src="assets/images/fedex-logo.svg" alt="FedEx Logo" />
-						<img class="grayscale" src="assets/images/servicemaster-logo.svg" alt="ServiceMaster Logo" />
-						<img class="grayscale" src="assets/images/southland-casino-logo.png" alt="Southland Casino Logo" />
+						<img onmouseover="addColor1()" onmouseout="removeColor1()" id="sponsor1" class="grayscale" src="assets/images/fedex-logo.svg" alt="FedEx Logo" />
+						<img onmouseover="addColor2()" onmouseout="removeColor2()" id="sponsor2" class="grayscale" src="assets/images/servicemaster-logo.svg" alt="ServiceMaster Logo" />
+						<img onmouseover="addColor3()" onmouseout="removeColor3()" id="sponsor3" class="grayscale" src="assets/images/southland-casino-logo.png" alt="Southland Casino Logo" />
 					</div>
 					<div class="footer-links add-col">
-						<img class="grayscale" src="assets/images/pinnacle-logo.svg" alt="Pinnacle Logo" />
-						<img class="grayscale" src="assets/images/ip-logo.svg" alt="International Paper Logo" />
-						<img class="grayscale" src="assets/images/ford.png" alt="Ford Logo" />
+						<img onmouseover="addColor4()" onmouseout="removeColor4()" id="sponsor4" class="grayscale" src="assets/images/pinnacle-logo.svg" alt="Pinnacle Logo" />
+						<img onmouseover="addColor5()" onmouseout="removeColor5()" id="sponsor5" class="grayscale" src="assets/images/ip-logo.svg" alt="International Paper Logo" />
+						<img onmouseover="addColor6()" onmouseout="removeColor6()" id="sponsor6" class="grayscale" src="assets/images/ford.png" alt="Ford Logo" />
 					</div>
 				</div>
 			</div>
@@ -142,4 +142,81 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		window.onscroll = function() {
+			growShrinkLogo()
+		};
+
+		function growShrinkLogo() {
+			var Logo = document.getElementById("grizzlies-logo")
+			var LogoDiv = document.getElementById("team-logo")
+			if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+				Logo.style.width = '30%';
+				LogoDiv.style.top = '5px';
+			} else {
+				Logo.style.width = '50%';
+				LogoDiv.style.top = '25px';
+			}
+		}
+		
+		function addColor1() {
+			var element = document.getElementById("sponsor1");
+			element.classList.remove("grayscale");
+		}
+		
+		function removeColor1() {
+			var element = document.getElementById("sponsor1");
+			element.classList.add("grayscale");
+		}
+		
+		function addColor2() {
+			var element = document.getElementById("sponsor2");
+			element.classList.remove("grayscale");
+		}
+		
+		function removeColor2() {
+			var element = document.getElementById("sponsor2");
+			element.classList.add("grayscale");
+		}
+		
+		function addColor3() {
+			var element = document.getElementById("sponsor3");
+			element.classList.remove("grayscale");
+		}
+		
+		function removeColor3() {
+			var element = document.getElementById("sponsor3");
+			element.classList.add("grayscale");
+		}
+		
+		function addColor4() {
+			var element = document.getElementById("sponsor4");
+			element.classList.remove("grayscale");
+		}
+		
+		function removeColor4() {
+			var element = document.getElementById("sponsor4");
+			element.classList.add("grayscale");
+		}
+		
+		function addColor5() {
+			var element = document.getElementById("sponsor5");
+			element.classList.remove("grayscale");
+		}
+		
+		function removeColor5() {
+			var element = document.getElementById("sponsor5");
+			element.classList.add("grayscale");
+		}
+		
+		function addColor6() {
+			var element = document.getElementById("sponsor6");
+			element.classList.remove("grayscale");
+		}
+		
+		function removeColor6() {
+			var element = document.getElementById("sponsor6");
+			element.classList.add("grayscale");
+		}
+	</script>
 </html>
