@@ -462,7 +462,36 @@ th {
 	}
 
 	.mobile-hide {
-		display: none;
+		display: none !important;
+	}
+	
+	#link-nba-container {
+		text-align: right;
+	}
+	
+	#link-nba-container ul {
+		padding-left: 20px;
+	}
+	
+	#link-nba-container ul li {
+		margin-right: 20px;
+		font-size: 10px;
+	}
+	
+	#link-nba-container ul li:last-child {
+		margin-right: 0px;
+	}
+	
+	#nba-logo {
+		width: 12%;
+	}
+	
+	.left-nav-container img {
+		width: 100%;
+	}
+	
+	#main-container, .nav-content {
+		width: 90%;
 	}
 	
 	.col-container, #bottom-footer, #left-bottom-footer, #right-bottom-footer {
