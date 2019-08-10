@@ -220,14 +220,27 @@ h1, h2, h3, h4, h5, h6 {
 .table-cap {
 	text-transform: uppercase;
 	font-weight: bold;
+	color: #66737C;
+	text-align: left;
 }
 
-#bio-table {
+#bio-table, #stats-table {
 	border-collapse: collapse;
+	width: 100%;
+	text-align: right;
 }
 
-#bio-table tbody tr td {
-	border-bottom: 1px solid #000;
+#stats-table tbody tr td {
+	padding-right: 15px;
+}
+
+th {
+	text-align: center;
+}
+
+#bio-table tbody tr td, #stats-table tbody tr td {
+	border-bottom: 1px solid #CCD0D3;
+	font-size: 13px;
 }
 
 /*Footer*/
