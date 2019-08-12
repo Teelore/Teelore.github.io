@@ -587,6 +587,10 @@ th {
 		overflow-x: hidden !important;
 	}
 	
+	#main-container {
+		margin-top: 25px;
+	}
+	
 	.mobile-padding {
 		padding: 10px;
 	}
