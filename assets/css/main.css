@@ -12,11 +12,11 @@ body {
 	margin: 0px;
 }
 
-.mobile {
+.mobile, .tablet {
 	display: none !important;
 }
 
-.mobile-hide {
+.mobile-hide, .tablet-hide {
 	display: block;
 }
 
@@ -449,12 +449,135 @@ th {
 
 /*Media Queries*/
 /* Small Devices, Tablets */
-@media only screen and (min-width: 481px and max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
 	.modal-content {
 		width: 100%;
 	}
-	.mobile {
+	.mobile, .tablet-hide {
 		display: none !important;
+	}
+	.tablet {
+		display: block !important;
+	}	
+	nav, #main-container, #footer, #memphis-nav, .nav-content, body, html {
+		overflow-x: hidden !important;
+	}
+	
+	.mobile-padding {
+		padding: 10px;
+	}
+	
+	body .mobile, .tablet {
+		display: block  !important;
+	}
+
+	body .mobile-hide, .tablet-hide {
+		display: none !important;
+	}
+	
+	#link-nba-container {
+		text-align: right;
+	}
+	
+	#link-nba-container ul {
+		padding-left: 20px;
+	}
+	
+	#link-nba-container ul li {
+		margin-right: 20px;
+		font-size: 10px;
+	}
+	
+	#link-nba-container ul li:last-child {
+		margin-right: 0px;
+	}
+	
+	#nba-logo {
+		width: 12%;
+	}
+	
+	#basic {
+		padding: 10px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	#bio-center {
+		margin-left: 275px;
+	}
+	
+	#bio-right {
+		margin-right: 10px;
+	}
+	
+	#mobile-menu {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	#mobile-logo {
+		width: 20%;
+		float: left;
+	}
+	
+	#menu-button {
+		float: right;
+		font-size: 30px;
+		background-color: #7C9AC0;
+		padding: 10px 20px;
+		border-radius: 10px;
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+	
+	.left-nav-container img {
+		width: 100%;
+	}
+	
+	#main-container, .nav-content {
+		width: 90%;
+	}
+	
+	#gallery {
+		padding-top: 20px;
+	}
+	
+	.col-container, #bottom-footer, #left-bottom-footer, #right-bottom-footer {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	#bottom-footer {
+		width: 100%;
+		padding: 10px;
+		margin: 0px;
+		padding-left: 0px;
+	}
+	
+	#top-footer ul, #bottom-footer ul {
+		text-align: center;
+		margin: 0 auto;
+		padding-left: 0px;
+	}
+	
+	.footer-links {
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 auto;
+		padding: 0px;
+	}
+	
+	.footer-links img {
+		width: 25%;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#video {
+		height: 310px;
 	}
 }
 
@@ -468,11 +591,11 @@ th {
 		padding: 10px;
 	}
 	
-	.mobile {
+	body .mobile, .tablet {
 		display: block  !important;
 	}
 
-	.mobile-hide {
+	body .mobile-hide, .tablet-hide {
 		display: none !important;
 	}
 	
