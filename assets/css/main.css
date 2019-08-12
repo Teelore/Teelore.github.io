@@ -522,8 +522,7 @@ th {
 	}
 	
 	#menu-button {
-		float: left;
-		margin-left: 175px;
+		float: right;
 		font-size: 30px;
 		background-color: #7C9AC0;
 		padding: 10px 20px;
